@@ -1,2 +1,17 @@
-<h3>Home Component</h3>
-<p>Welcome to Angular Seed</p>
+<div *ngIf="catalogue" id='catalogue'>
+    <div id='carousel' class='carousel'>
+        <img (click)="viewImage()" src='{{current_image}}'>
+    </div>
+
+    <div class="catalogue_container">
+        <div class="catalogue_thumb" *ngFor="let img of images">
+            <div class="catalogue_image" [class.selected]="img === current_image">
+                <img (click)="changeToImage(img)" src='{{img}}'> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="viewimage" *ngIf="!catalogue">
+    <img (click)="viewImage()" src='{{current_image}}'>
+</div>
