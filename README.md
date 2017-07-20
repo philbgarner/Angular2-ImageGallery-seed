@@ -1,7 +1,8 @@
-## angular2-seed
+## Angular2-ImageGallery-seed
 
-A simple starter project demonstrating the basic concepts of Angular 2.
+This project is intended to be a simple image gallery you can use to build your own more advanced image gallery applications.
 
+Download or clone this repository and upload the contents of the /dist folder to your http server to view the sample gallery in action.
 
 ### Usage
 - Clone or fork this repository
@@ -12,3 +13,4 @@ A simple starter project demonstrating the basic concepts of Angular 2.
 - run `npm start` to fire up dev server
 - open browser to [`http://localhost:3000`](http://localhost:3000)
 - if you want to use other port, open `package.json` file, then change port in `--port 3000` script
+
